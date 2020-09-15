@@ -38,3 +38,13 @@ const options = () => {
     console.log("select a song")
 }
 powerButton()
+
+
+const vendingMachine = {
+    snacks: [{name: "twix", price: 2}, {name: "butterfinger", price: 1}, {name: "reeses", price: 1.5}],
+    vend: function(num) {
+        return vendingMachine.snacks[num].name
+    }
+}
+
+console.log(vendingMachine.vend(0))
